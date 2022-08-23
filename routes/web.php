@@ -17,6 +17,42 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/app', function () {
-    return view('layout.app');
+
+
+//halaman default
+Route::get('/default', function () {
+    return view('default.index');
 });
+
+
+
+// manajemen user
+Route::get('/client', function () {
+    return view('client.index');
+});
+Route::get('/member', function () {
+    return view('member.index');
+});
+Route::get('/admin', function () {
+    return view('admin.index');
+});
+
+// manajemen produk
+Route::get('/kategori', function () {
+    return view('kategori.index');
+});
+Route::get('/produk', function () {
+    return view('produk.index');
+});
+
+// manajemen pesanan
+Route::get('/pesanan', function () {
+    return view('pesanan.index');
+});
+
+
+// manajemen transaksi
+Route::get('/pembayaran', function () {
+    return view('pembayaran.index');
+});
+// Route::get()
